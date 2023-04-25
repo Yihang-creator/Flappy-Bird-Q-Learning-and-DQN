@@ -10,4 +10,4 @@ from DQNAgent import DQNAgent\
 bot = DQNAgent()\
 comment out\
 from bot import Bot\
-bot = Bot()\
+bot = Bot()
