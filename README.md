@@ -5,7 +5,7 @@ bot.py: the class implementing simple Q-Learning algorithm\
 DQNAgent.py: the class implementing DQN algorithm\
 Learn.py: Faster Training without UI.
 
-To switch from q-learning to DQN, uncomment
+To switch from q-learning to DQN, uncomment\
 from DQNAgent import DQNAgent\
 bot = DQNAgent()\
 comment out\
