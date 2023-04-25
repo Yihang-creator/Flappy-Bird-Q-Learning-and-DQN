@@ -21,6 +21,7 @@ class QNetwork(nn.Module):
         return self.model(x)
 
 
+#Solution for question 8
 class ReplayMemory(Dataset):
     def __init__(self,capacity):
         self.capacity = capacity
@@ -54,6 +55,8 @@ class ReplayMemory(Dataset):
 
 # This class is for students to fill in. This class includes similar function to bot.py like
 # act, update_scores, map_state. Load_qvalue and dump_qvalues are not necessary for grades.
+
+# Solution for question 7
 class DQNAgent(object):
     def __init__(self):
         self.gameCNT = 0  # Game count of current run, incremented after every death
@@ -190,6 +193,7 @@ class DQNAgent(object):
         ydif = -playery + curPipe["y"]
 
         return torch.tensor([xdif,ydif,vel],dtype=torch.float32)
+
     def dump_qvalues(self, force=False):
         """
         Dump the qvalues to the .pt file

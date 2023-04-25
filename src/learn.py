@@ -14,10 +14,10 @@ sys.path.append(os.getcwd())
 
 
 # Initialize the bot
-from DQNAgent import DQNAgent
-bot = DQNAgent()
-# from bot import Bot
-# bot = Bot()
+# from DQNAgent import DQNAgent
+# bot = DQNAgent()
+from bot import Bot
+bot = Bot()
 
 
 SCREENWIDTH = 288

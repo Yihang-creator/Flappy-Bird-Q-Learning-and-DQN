@@ -13,7 +13,7 @@ class Bot(object):
         self.gameCNT = 0
         self.DUMPING_N = 25
         self.discount = 1.0 #[This is for students to fill in]
-        self.r = {0: 0, 1: -1000}  # Reward function for students to fill in
+        self.r = {0: 0, 1: -1000}  # Reward function for students to fill in: Solution for question 2
         self.lr = 0.7 # learning rate for students to fill in
         self.load_qvalues()
         self.last_state = "420_240_0"
@@ -43,6 +43,7 @@ class Bot(object):
         state = self.map_state(states_arr)
 
         # The below is for students to fill in
+        # Solution for question 3
 
         self.moves.append(
             (self.last_state, self.last_action, state)
@@ -94,7 +95,7 @@ class Bot(object):
         self.moves = []  # clear history after updating strategies
 
     def map_state(self, states_arr):
-        # This is for students to fill in
+        # Question1 solution.
         playerx = states_arr[0]
         playery = states_arr[1]
         vel = states_arr[2]
