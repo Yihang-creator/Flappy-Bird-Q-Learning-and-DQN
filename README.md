@@ -8,6 +8,6 @@ Learn.py: Faster Training without UI.
 To switch from q-learning to DQN, uncomment
 from DQNAgent import DQNAgent\
 bot = DQNAgent()\
-comment out
+comment out\
 from bot import Bot\
 bot = Bot()\
