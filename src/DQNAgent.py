@@ -7,7 +7,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 
 
-#The entire file is for students to fill in
+#QNetwork class and ReplayMemory class are implementation decisions.
 class QNetwork(nn.Module):
     def __init__(self, input_size, output_size, hidden_size=64):
         super().__init__()
@@ -52,6 +52,8 @@ class ReplayMemory(Dataset):
         return batch
 
 
+# This class is for students to fill in. This class includes similar function to bot.py like
+# act, update_scores, map_state. Load_qvalue and dump_qvalues are not necessary for grades.
 class DQNAgent(object):
     def __init__(self):
         self.gameCNT = 0  # Game count of current run, incremented after every death
